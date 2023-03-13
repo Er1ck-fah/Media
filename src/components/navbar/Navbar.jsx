@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 const Navbar = () => {
   const [active, setActive] = useState(false);
   const [open, setOpen] = useState(false);
+  const [lang, setLang] = useState(false);
   const { pathname } = useLocation();
   const isActive = () => {
     window.scrollY > 0 ? setActive(true) : setActive(false);
@@ -76,6 +77,31 @@ const Navbar = () => {
               )}
             </div>
           )}
+          <div className="langue" onClick={() => setLang(!lang)}>
+            <img
+              src="https://e7.pngegg.com/pngimages/246/354/png-clipart-cork-english-college-france-spanish-language-france-english-flag.png"
+              alt=""
+            />
+            <span>English</span>
+            {lang && (
+              <div className="langues">
+                <Link className="link" to="/">
+                  <img
+                    src="https://e7.pngegg.com/pngimages/246/354/png-clipart-cork-english-college-france-spanish-language-france-english-flag.png"
+                    alt=""
+                  />
+                  <span>English</span>
+                </Link>
+                <Link className="link" to="/">
+                  <img
+                    src="https://image.pngaaa.com/438/2771438-middle.png"
+                    alt=""
+                  />
+                  <span>French</span>
+                </Link>
+              </div>
+            )}
+          </div>
         </div>
       </div>
       {(active || pathname !== "/") && (

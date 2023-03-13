@@ -7,7 +7,8 @@
     transition: 0.5s all ease;
     position: sticky;
     top: 0;
-z-index: 999;
+    z-index: 999;
+
     &.active {
         background-color: white;
         color: black;
@@ -17,27 +18,24 @@ z-index: 999;
         width: 80%;
         display: flex;
         justify-content: space-between;
-        padding: 20px 0px;
+        padding: 1% 0%;
 
         .logo {
             font-size: 34px;
             font-weight: bold;
             font-family: fantasy, sans-serif;
-
             .text {}
 
             .dot {
                 color: #1dbf73;
             }
         }
-
         .links {
             display: flex;
             text-align: center;
             gap: 24px;
             font-weight: 500;
             font-family: "Montserrat", sans-serif;
-
             .user {
                 display: flex;
                 align-items: center;
@@ -45,7 +43,6 @@ z-index: 999;
                 cursor: pointer;
                 position: relative;
                 top: -20px;
-
                 img {
                     width: 32px;
                     height: 32px;
@@ -55,7 +52,7 @@ z-index: 999;
 
                 .options {
                     position: absolute;
-                    top: 70px;
+                    top: 120%;
                     right: 0;
                     padding: 20px;
                     background-color: white;
@@ -83,6 +80,36 @@ z-index: 999;
                 &:hover {
                     background-color: #1dbf73;
                     border-color: #1dbf73;
+                }
+            }
+            .langue{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+                position: relative;
+                top: -20px;
+                img {
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                .langues {
+                    position: absolute;
+                    top: 70px;
+                    right: 10;
+                    padding: 20px;
+                    background-color: white;
+                    border-radius: 10px;
+                    border: 1px solid lightgray;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10x;
+                    color: rgb(21, 20, 20);
+                    text-align: left;
+                    width: 100px;
+                    font-weight: 300;
                 }
             }
         }
