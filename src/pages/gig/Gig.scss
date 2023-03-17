@@ -35,31 +35,72 @@
                 .span {
                     font-size: 14px;
                     font-weight: 500;
-                    
+
                 }
+
                 .stars {
-                    display: flex;align-items: center;
+                    display: flex;
+                    align-items: center;
                     gap: 5px;
+
                     img {
                         width: 14px;
                         height: 14px;
                     }
-                    span{
-                        font-size: 14px;font-weight: bold;
+
+                    span {
+                        font-size: 14px;
+                        font-weight: bold;
                         color: #ffc108;
 
                     }
                 }
+
                 // .breadCrumbs {}
             }
-            
+
             .slider {
 
                 img {
-                    max-height: 500px;
+                    max-height: 50opx;
                     object-fit: contain;
-                    
+
                 }
+            }
+
+            h2 {
+                font-weight: 400;
+            }
+
+            p {
+                font-weight: 300;
+                color: #555;
+                line-height: 25px;
+            }
+
+            .seller {
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .user {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    .info {}
+                    .info {}
+                }
+
+                // .breadCrumbs {}
             }
 
             // .breadCrumbs {}
@@ -69,10 +110,10 @@
             flex: 1;
         }
 
-      //  .gig {}
+        //  .gig {}
     }
 
-   // .gig {}
+    // .gig {}
 
 }
 
